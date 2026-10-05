@@ -3,66 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roulletka - Na zdar!</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <title>nazdar</title>
+    <style>
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+      body {
+        display: grid;
+        place-items: center;
+        background: #111111;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .nazdar {
+        color: #ffffff;
+        font-size: clamp(3rem, 12vw, 12rem);
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: lowercase;
+        user-select: none;
+      }
+    </style>
   </head>
   <body>
-    <div class="page-shell">
-      <header class="topbar">
-        <div class="brand">Roulletka</div>
-        <nav class="nav">
-          <a href="#hry">Hry</a>
-          <a href="#pravidla">Pravidla</a>
-          <a href="#kontakt">Kontakt</a>
-        </nav>
-      </header>
-
-      <main class="hero">
-        <section class="hero-copy">
-          <span class="eyebrow">Na zdar!</span>
-          <h1>Vítej v kouzelném světě štěstí.</h1>
-          <p>
-            Odvíjej náhodu, nechej se popostrčit štěstím a pusť se do jednoduché,
-            rychlé a stylové rulety.
-          </p>
-          <div class="cta-row">
-            <button id="spinBtn" class="primary-btn">Točit</button>
-            <a href="#pravidla" class="ghost-btn">Jak to funguje</a>
-          </div>
-          <div class="result-box">
-            <span class="result-label">Výsledek:</span>
-            <strong id="result">Čeká se na štěstí...</strong>
-          </div>
-        </section>
-
-        <section class="roulette-panel" aria-label="Ruletové kolo">
-          <div class="roulette-wrap">
-            <div class="pointer" aria-hidden="true"></div>
-            <div class="roulette-wheel" id="rouletteWheel"></div>
-            <div class="roulette-center">?</div>
-          </div>
-        </section>
-      </main>
-
-      <section class="info-grid" id="hry">
-        <article class="info-card">
-          <h2>Rychlá hra</h2>
-          <p>Jednoduché roztočení a okamžitý výsledek bez zbytečných komplikací.</p>
-        </article>
-        <article class="info-card" id="pravidla">
-          <h2>Pravidla</h2>
-          <p>Stačí stisknout tlačítko a nechat rozhodnout osud, čísla a šťastné momenty.</p>
-        </article>
-        <article class="info-card" id="kontakt">
-          <h2>Vše na jednom místě</h2>
-          <p>Elegantní design, čisté rozhraní a příjemná atmosféra pro každé hraní.</p>
-        </article>
-      </section>
-    </div>
-
-    <script src="script.js"></script>
+    <div class="nazdar">nazdar</div>
   </body>
 </html>
